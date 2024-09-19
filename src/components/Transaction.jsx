@@ -40,8 +40,8 @@ const Transaction = ({setTransactions}) =>{
     return(
        <Container>
           <Typography variant ="h5">New Transaction</Typography>
-          <TextField label = "Enter expense" value={text} type='text' onChange={handleTextChange}/>
-          <TextField label = "Enter amount" value={amount}  type='number'onChange={handleAmountChange} onKeyPress={handleKeyPress} />
+          <TextField label = "Enter expense" value={text} type ='text' onChange={handleTextChange}/>
+          <TextField label = "Enter amount" value={amount}  type ='number'onChange={handleAmountChange} onKeyPress={handleKeyPress} />
           <Button variant="contained" onClick={() => addTransaction()}>Add Transaction</Button>
       </Container>
     )
